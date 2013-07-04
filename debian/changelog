@@ -1,0 +1,106 @@
+openvas-cli (1.2.0-1) unstable; urgency=low
+
+  * version number update by debtransform
+
+ -- debtransform <build@opensuse.org>  Thu, 04 Jul 2013 10:45:50 +0000
+
+openvas-cli (1.1.5-1) unstable; urgency=low
+
+  * New upstream release.
+    - Clean up CMake infrastructure and ensure that compilation with modern
+      gccs works.
+    - If the OMP version is unknown just treat it like version 3.0, as later
+      versions may still work with the 3.0 settings.
+
+ -- Stephan Kleine <bitshuffler@opensuse.org>  Fri, 10 Aug 2011 23:39:51 +0200
+
+openvas-cli (1.1.4-1) unstable; urgency=low
+
+  * New upstream release.
+    - Support for OMP 3.0 when retrieving reports has been added.
+
+ -- Stephan Kleine <bitshuffler@opensuse.org>  Tue, 06 Dec 2011 21:49:59 +0100
+
+openvas-cli (1.1.3-1) unstable; urgency=low
+
+  * New upstream release.
+    - The "omp" command now accepts XML input from stdin when using the "-X"
+      parameter.
+
+ -- Stephan Kleine <bitshuffler@opensuse.org>  Sun, 16 Oct 2011 14:09:19 +0200
+
+openvas-cli (1.1.2-1) unstable; urgency=low
+
+  * New upstream release.
+    - The build environment has been consolidated.
+    - The documentation for the password parameter on the man page has been
+      corrected.
+
+ -- Stephan Kleine <bitshuffler@opensuse.org>  Wed, 23 Feb 2011 20:49:31 +0100
+
+openvas-cli (1.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+    - Hardening flags are now enabled during compile time to increase code quality.
+    - The output of --version is now compliant with the GNU Coding Standards.
+    - The omp binary now warns about revealing passwords when verbose output is
+      requested.
+    - OpenVAS CLI now use pkg-config to find required libraries.
+    - OpenVAS CLI now provides a manual page for the omp binary.
+    - The authentication password can now be entered interactively.
+
+ -- Stephan Kleine <bitshuffler@opensuse.org>  Fri, 04 Feb 2011 21:53:44 +0100
+
+openvas-cli (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+    - New parameter: --get-configs for retrieving a list of scan configs.
+    - New parameter: --get-targets for retrieving a list of targets.
+    - Special characters in OMP commands (like umlauts) are now handled correctly.
+    - The documentation has been improved; source code documentation can now be
+      generated using the "make doc" and "make doc-full" commands.
+    - Compatibility with different OMP versions has been improved.
+    - New parameter: --get-report-formats for retrieving the available report
+      formats (OMP 2.0 only).
+    - New parameter: --get-omp-version for determining the OMP version used by the
+      server.
+
+ -- Stephan Kleine <bitshuffler@opensuse.org>  Fri, 03 Dec 2010 19:08:38 +0100
+
+openvas-cli (1.0.1-1) unstable; urgency=low
+
+  * New upstream release.
+    - Special characters in OMP commands (like umlauts) are now handled correctly.
+    - The documentation has been improved; source code documentation can now be
+      generated using the "make doc" and "make doc-full" commands.
+
+ -- Stephan Kleine <bitshuffler@opensuse.org>  Thu, 28 Oct 2010 18:53:26 +0200
+
+openvas-cli (1.0.0-1) unstable; urgency=low
+
+  * New upstream release.
+    - The build environment and the code have been cleaned up and made more
+      consistent with the other OpenVAS modules.
+    - The documentation has been updated.
+
+ -- Stephan Kleine <bitshuffler@opensuse.org>  Wed, 04 Aug 2010 16:01:26 +0200
+
+openvas-cli (0.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+    - The build environment has been improved. It is now possible to use MinGW to
+      compile openvas-cli for Microsoft Windows.
+    - Support for storing the connection credentials in a configuration file has
+      been added.
+    - The --get-status parameter has been renamed to --get-tasks to reflect the
+      updates in the OMP specification.
+    - The openvas-libraries dependency has been raised to 3.1.0.
+
+ -- Stephan Kleine <bitshuffler@opensuse.org>  Mon, 19 Jul 2010 17:28:25 +0200
+
+openvas-cli (0.1.0-1) unstable; urgency=low
+
+  * Initial package.
+
+ -- Stephan Kleine <bitshuffler@opensuse.org>  Mon, 22 Mar 2010 16:32:16 +0100
+

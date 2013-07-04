@@ -1,0 +1,27 @@
+Source: openvas-cli
+Section: net
+Priority: extra
+Maintainer: Stephan Kleine <bitshuffler@opensuse.org>
+Build-Depends: cdbs, debhelper (>= 5), dpatch, cmake, hardening-wrapper, libopenvas6-dev, pkg-config
+Homepage: http://www.openvas.org/
+Standards-Version: 3.8.0
+
+Package: openvas-cli
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Command Line Tools for OpenVAS
+ OpenVAS-CLI collects command line tools
+ to handle with the OpenVAS services via the respective
+ protocols.
+
+Package: openvas-cli-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends}, openvas-cli (= ${binary:Version})
+Description: Command Line Tools for OpenVAS (debug)
+ OpenVAS-CLI collects command line tools
+ to handle with the OpenVAS services via the respective
+ protocols.
+ .
+ This package contains the debugging symbols.
