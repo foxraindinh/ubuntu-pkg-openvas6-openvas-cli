@@ -1,7 +1,7 @@
 Source: openvas-cli
 Section: net
 Priority: extra
-Maintainer: Stephan Kleine <bitshuffler@opensuse.org>
+Maintainer: Build Service <srv.build@dinotools.org>
 Build-Depends: cdbs, debhelper (>= 5), dpatch, cmake, hardening-wrapper, libopenvas6-dev, pkg-config
 Homepage: http://www.openvas.org/
 Standards-Version: 3.8.0

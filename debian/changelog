@@ -1,3 +1,9 @@
+openvas-cli (1.2.0-1ubuntu1~precise) precise; urgency=low
+
+  * Build for Ubuntu precise
+
+ -- Build Service <srv.build@dinotools.org>  Wed, 31 Jul 2013 22:29:14 +0200
+
 openvas-cli (1.2.0-1) unstable; urgency=low
 
   * version number update by debtransform
